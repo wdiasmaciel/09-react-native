@@ -4,7 +4,7 @@ export default function Layout() {
   return (
     <Stack>
       <Stack.Screen name="index" options={{ title: 'Início' }} />
-      <Stack.Screen name="detalhes" options={{ title: 'Detalhes do Item' }} />
+      <Stack.Screen name="detalhe" options={{ title: 'Detalhes do Item' }} />
     </Stack>
   );
 }
