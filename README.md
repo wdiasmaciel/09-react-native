@@ -49,3 +49,21 @@ No arquivo `_layout.tsx`, configure opções individuais para as telas usando `S
 	3. Na tela Home, verifique se o botão físico/virtual de "Voltar" (no topo ou no sistema operacional) desapareceu, impedindo o usuário de retornar ao Login deslogado.
 
 	4. Adicione um botão "Sair" na Home que faz o caminho inverso, usando replace('Login').
+
+### 6: Catálogo de Produtos (Passagem de Parâmetros e Título Dinâmico)
+
+**Objetivo**: enviar dados de uma tela para outra (route.params) e alterar o cabeçalho dinamicamente.
+
+• Cenário: uma lista de produtos em que ao clicar em um item abre os detalhes específicos dele.
+
+• Requisitos:
+
+	1. Crie duas telas: ListaProdutos e DetalhesProduto.
+
+	2. Na ListaProdutos, renderize uma lista com pelo menos 3 itens (ex: Camiseta, Tênis, Boné). Cada item deve ser um botão que redireciona para DetalhesProduto passando um objeto de dados (ex: { nome: 'Tênis', preco: 'R$ 299,00', descricao: 'Tênis de corrida confortável' }).
+
+	3. Na tela DetalhesProduto, recupere os dados usando route.params e exiba o preço e a descrição na tela.
+
+	4. Configure o options do seu Stack Navigator para que o título do cabeçalho da tela DetalhesProduto seja dinamicamente o nome do produto recebido (utilize a função options={({ route }) => ({ title: route.params.nome })}
+
+    
