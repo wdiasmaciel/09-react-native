@@ -4,7 +4,7 @@
 
 ## Exercícios: Navegação por Stack
 
-Os exercícios usam como ponto de partida o fluxo de produtos já presente nesta prática: Início, Detalhes e Carrinho. Implemente e teste as mudanças em `meu-app/app/`.
+Os exercícios de 1 a 4 usam como ponto de partida o fluxo de produtos já presente nesta prática: Início, Detalhes e Carrinho. Implemente e teste as mudanças em `meu-app/app/`.
 
 ### 1. Abrir os detalhes de um produto
 
