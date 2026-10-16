@@ -66,4 +66,20 @@ No arquivo `_layout.tsx`, configure opções individuais para as telas usando `S
 
 	4. Configure o options do seu Stack Navigator para que o título do cabeçalho da tela DetalhesProduto seja dinamicamente o nome do produto recebido (utilize a função options={({ route }) => ({ title: route.params.nome })}
 
-    
+### 7. Formulário em Etapas (Gerenciamento da Pilha com popToTop)
+
+**Objetivo**: manipular múltiplos níveis da pilha e retornar diretamente à origem (popToTop ou navigate para uma rota existente).
+
+• Cenário: um cadastro de perfil dividido em várias etapas para não sobrecarregar o usuário.
+
+• Requisitos:
+
+	1. Crie quatro telas sequenciais: Etapa1 (Nome), Etapa2 (E-mail), Etapa3 (Senha) e Sucesso.
+
+	2. A navegação deve avançar linearmente: Etapa1 → Etapa2 → Etapa3 → Sucesso.
+
+	3. Na tela Etapa3, garanta que o botão "Avançar" leve à tela Sucesso.
+
+	4. Na tela final Sucesso, adicione um botão chamado "Concluir e Voltar ao Início". Esse botão deve executar o método navigation.popToTop().
+
+	5. Teste de validação: navegue por todo o fluxo até a tela Sucesso. Ao clicar no botão final, o app deve limpar todas as telas intermediárias da memória e retornar instantaneamente para a Etapa1.    
